@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { TrainerProfile } from '../data/trainer';
+import { getAssetUrl } from '../utils/assets';
 
 interface MethodologySectionProps {
   profile: TrainerProfile;
@@ -69,7 +70,7 @@ export const MethodologySection: React.FC<MethodologySectionProps> = ({ profile 
                     {hasPhoto && (
                       <div className="mt-4 rounded-xl overflow-hidden border border-[#24292E] relative h-40 w-full max-w-md group-hover:border-[#CCFF00]/40 transition-colors shadow-md">
                         <img
-                          src="/images/battle-ropes.jpg"
+                          src={getAssetUrl('images/battle-ropes.jpg')}
                           alt="Sessão de treinamento com cordas navais e acompanhamento do treinador"
                           referrerPolicy="no-referrer"
                           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

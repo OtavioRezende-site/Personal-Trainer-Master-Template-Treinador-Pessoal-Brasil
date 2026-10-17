@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Camera } from 'lucide-react';
 import { TrainerProfile } from '../data/trainer';
+import { getAssetUrl } from '../utils/assets';
 
 interface GallerySectionProps {
   profile: TrainerProfile;
@@ -9,10 +10,10 @@ interface GallerySectionProps {
 
 export const GallerySection: React.FC<GallerySectionProps> = ({ profile }) => {
   const imageAssets = [
-    '/images/trainer-cable-setup.jpg',
-    '/images/client-squat.jpg',
-    '/images/battle-ropes.jpg',
-    '/images/trainer-walk.jpg',
+    getAssetUrl('images/trainer-cable-setup.jpg'),
+    getAssetUrl('images/client-squat.jpg'),
+    getAssetUrl('images/battle-ropes.jpg'),
+    getAssetUrl('images/trainer-walk.jpg'),
   ];
 
   return (

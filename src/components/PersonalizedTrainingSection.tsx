@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Target, Activity, Clock, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import { TrainerProfile } from '../data/trainer';
+import { getAssetUrl } from '../utils/assets';
 
 interface PersonalizedTrainingSectionProps {
   profile: TrainerProfile;
@@ -77,7 +78,7 @@ export const PersonalizedTrainingSection: React.FC<PersonalizedTrainingSectionPr
             className="lg:col-span-5 relative rounded-3xl overflow-hidden border border-[#24292E] hover:border-[#38414A] bg-[#0B0D0E] min-h-[380px] group flex flex-col justify-end p-6 sm:p-8 shadow-2xl"
           >
             <img
-              src="/images/client-squat.jpg"
+              src={getAssetUrl('images/client-squat.jpg')}
               alt="Treinador ajustando postura da aluna no agachamento com kettlebell"
               referrerPolicy="no-referrer"
               className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"

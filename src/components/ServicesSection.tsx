@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { ArrowUpRight, Check, Dumbbell, Globe2, ShieldPlus, ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
 import { TrainerProfile, buildWhatsAppUrl } from '../data/trainer';
+import { getAssetUrl } from '../utils/assets';
 
 interface ServicesSectionProps {
   profile: TrainerProfile;
@@ -9,9 +10,9 @@ interface ServicesSectionProps {
 export const ServicesSection: React.FC<ServicesSectionProps> = ({ profile }) => {
   const serviceIcons = [Dumbbell, Globe2, ShieldPlus];
   const serviceImages = [
-    '/images/trainer-walk.jpg',
-    '/images/trainer-cable-setup.jpg',
-    '/images/battle-ropes.jpg',
+    getAssetUrl('images/trainer-walk.jpg'),
+    getAssetUrl('images/trainer-cable-setup.jpg'),
+    getAssetUrl('images/battle-ropes.jpg'),
   ];
 
   const carouselRef = useRef<HTMLDivElement>(null);

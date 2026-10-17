@@ -5,6 +5,7 @@
  * Para personalizar para um novo cliente, basta atualizar este arquivo
  * ou alternar o perfil ativo.
  */
+import { getAssetUrl } from '../utils/assets';
 
 export interface TrainerService {
   id: string;
@@ -236,13 +237,13 @@ export const defaultTrainerProfile: TrainerProfile = {
   },
 
   media: {
-    // Caminhos exatos dos vídeos cinematográficos
-    heroDesktopVideo: '/videos/hero-desktop.mp4',
-    heroMobileVideo: '/videos/hero-mobile.mp4',
-    desktopPoster: '/images/hero-desktop-poster.jpg',
-    mobilePoster: '/images/hero-mobile-poster.jpg',
-    trainerPortrait: '/images/trainer-coaching-profile.jpg',
-    trainingScene: '/images/trainer-walk.jpg',
+    // Caminhos compatíveis com domínio raiz e subdiretórios do GitHub Pages
+    heroDesktopVideo: getAssetUrl('videos/hero-desktop.mp4'),
+    heroMobileVideo: getAssetUrl('videos/hero-mobile.mp4'),
+    desktopPoster: getAssetUrl('images/hero-desktop-poster.jpg'),
+    mobilePoster: getAssetUrl('images/hero-mobile-poster.jpg'),
+    trainerPortrait: getAssetUrl('images/trainer-coaching-profile.jpg'),
+    trainingScene: getAssetUrl('images/trainer-walk.jpg'),
   },
 
   contact: {
