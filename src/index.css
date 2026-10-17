@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Archivo', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-canvas: #0B0D0E;
+  --color-surface: #121517;
+  --color-surface-elevated: #181C1E;
+  --color-surface-border: #24292E;
+  
+  --color-ivory: #F5F4F0;
+  --color-ivory-muted: #9E9C96;
+  --color-ivory-subtle: #6D6B65;
+
+  --color-lime: #CCFF00;
+  --color-lime-hover: #B5E600;
+  --color-lime-glow: rgba(204, 255, 0, 0.25);
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: var(--color-ivory);
+    background-color: var(--color-canvas);
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom scrollbar for modern browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0D0E;
+}
+::-webkit-scrollbar-thumb {
+  background: #24292E;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #363D45;
+}
+
+/* Safe area padding utilities */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 1rem);
+}
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 1rem);
+}
+
+/* Hide scrollbar for smooth carousel */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="gymBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14171A"/>
+      <stop offset="40%" stop-color="#1A1E24"/>
+      <stop offset="75%" stop-color="#2D333B"/>
+      <stop offset="100%" stop-color="#3A424D"/>
+    </linearGradient>
+    <linearGradient id="windowLight" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8ECEF" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#A2ABB5" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="cableTowerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E2228"/>
+      <stop offset="50%" stop-color="#2E343E"/>
+      <stop offset="100%" stop-color="#15181D"/>
+    </linearGradient>
+    <linearGradient id="limeGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CCFF00" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#CCFF00" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vignette" cx="70%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#050708" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#050708" stop-opacity="0.95"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Deep Architecture Studio Background -->
+  <rect width="1920" height="1080" fill="url(#gymBgGrad)"/>
+
+  <!-- High Glass Gym Facade & Daylight on the Right Half -->
+  <path d="M 850 0 L 1920 0 L 1920 850 L 850 850 Z" fill="#2C3440" opacity="0.3"/>
+  <!-- Windows structural mullions -->
+  <line x1="1050" y1="0" x2="1050" y2="850" stroke="#161A20" stroke-width="8"/>
+  <line x1="1300" y1="0" x2="1300" y2="850" stroke="#161A20" stroke-width="8"/>
+  <line x1="1550" y1="0" x2="1550" y2="850" stroke="#161A20" stroke-width="8"/>
+  <line x1="1800" y1="0" x2="1800" y2="850" stroke="#161A20" stroke-width="8"/>
+  <!-- Transom / Crossbars -->
+  <line x1="850" y1="420" x2="1920" y2="420" stroke="#161A20" stroke-width="8"/>
+
+  <!-- Sunlit atmospheric haze from window -->
+  <polygon points="1920,0 1200,0 800,1080 1920,1080" fill="url(#windowLight)"/>
+
+  <!-- Gym Flooring (Matte Dark Charcoal with perspective line) -->
+  <polygon points="0,820 1920,820 1920,1080 0,1080" fill="#101215"/>
+  <line x1="0" y1="820" x2="1920" y2="820" stroke="#252A30" stroke-width="3"/>
+  <line x1="500" y1="820" x2="200" y2="1080" stroke="#191D22" stroke-width="2"/>
+  <line x1="1100" y1="820" x2="1000" y2="1080" stroke="#191D22" stroke-width="2"/>
+  <line x1="1600" y1="820" x2="1750" y2="1080" stroke="#191D22" stroke-width="2"/>
+
+  <!-- Cable Machine on Right/Center (Matches the video framing) -->
+  <g id="cableMachine" transform="translate(1080, 240)">
+    <!-- Main Frame Uprights -->
+    <rect x="0" y="0" width="36" height="600" rx="4" fill="url(#cableTowerGrad)"/>
+    <rect x="180" y="0" width="36" height="600" rx="4" fill="url(#cableTowerGrad)"/>
+    <!-- Top & Bottom Crossbeams -->
+    <rect x="-10" y="0" width="236" height="30" rx="4" fill="#252B33"/>
+    <rect x="-10" y="580" width="236" height="24" rx="3" fill="#1C2026"/>
+    <!-- Weight Stack Plates -->
+    <g transform="translate(46, 280)">
+      <rect x="0" y="0" width="124" height="16" rx="2" fill="#3D4550"/>
+      <rect x="0" y="19" width="124" height="16" rx="2" fill="#363E48"/>
+      <rect x="0" y="38" width="124" height="16" rx="2" fill="#303740"/>
+      <rect x="0" y="57" width="124" height="16" rx="2" fill="#2A3038"/>
+      <rect x="0" y="76" width="124" height="16" rx="2" fill="#242930"/>
+      <rect x="0" y="95" width="124" height="16" rx="2" fill="#1E2228"/>
+      <rect x="0" y="114" width="124" height="16" rx="2" fill="#181B20"/>
+      <rect x="0" y="133" width="124" height="16" rx="2" fill="#14171A"/>
+      <rect x="0" y="152" width="124" height="16" rx="2" fill="#101215"/>
+      <rect x="0" y="171" width="124" height="16" rx="2" fill="#0C0E10"/>
+      <!-- Selector Pin with Lime Highlight -->
+      <circle cx="62" cy="76" r="5" fill="#CCFF00"/>
+    </g>
+    <!-- Pulley Wheels & Cable -->
+    <circle cx="108" cy="40" r="14" fill="#4B5563"/>
+    <circle cx="108" cy="40" r="4" fill="#D1D5DB"/>
+    <line x1="108" y1="40" x2="108" y2="280" stroke="#9CA3AF" stroke-width="3"/>
+    <!-- Pull Down / Handle -->
+    <path d="M 60 160 L 156 160" stroke="#4B5563" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="108" cy="160" r="6" fill="#111827"/>
+  </g>
+
+  <!-- Athletic Personal Trainer Silhouette (Adjusting cable on right) -->
+  <g id="trainerSilhouette" transform="translate(1260, 260)">
+    <!-- Head -->
+    <circle cx="70" cy="50" r="28" fill="#1A1D22"/>
+    <!-- Neck & Traps -->
+    <polygon points="56,76 84,76 100,105 40,105" fill="#181B20"/>
+    <!-- Athletic Torso (Broad Shoulders, Fitted Shirt) -->
+    <path d="M 30 105 L 115 105 L 102 260 L 45 260 Z" fill="#13161A"/>
+    <!-- Left Arm Extending toward Cable Pin -->
+    <path d="M 30 110 L -25 155 L -60 180" stroke="#16191E" stroke-width="26" stroke-linecap="round" fill="none"/>
+    <!-- Right Arm naturally relaxed -->
+    <path d="M 115 110 L 135 180 L 130 240" stroke="#16191E" stroke-width="22" stroke-linecap="round" fill="none"/>
+    <!-- Legs (Performance Pants) -->
+    <path d="M 45 260 L 40 440 L 65 440 L 72 275 L 78 275 L 85 440 L 110 440 L 102 260 Z" fill="#0F1114"/>
+    <!-- Minimal Athletic Shoes -->
+    <rect x="25" y="440" width="45" height="18" rx="4" fill="#0A0B0D"/>
+    <rect x="80" y="440" width="45" height="18" rx="4" fill="#0A0B0D"/>
+  </g>
+
+  <!-- Treadmills & Cardio Machines in background perspective -->
+  <g transform="translate(1540, 520)" opacity="0.35">
+    <polygon points="0,180 80,180 140,280 20,280" fill="#1F242B"/>
+    <line x1="80" y1="180" x2="90" y2="100" stroke="#2B323C" stroke-width="12" stroke-linecap="round"/>
+    <polygon points="120,180 200,180 260,280 140,280" fill="#1A1E24"/>
+    <line x1="200" y1="180" x2="210" y2="100" stroke="#252A32" stroke-width="12" stroke-linecap="round"/>
+  </g>
+
+  <!-- Cinematic Vignette & Text Readability Scrim (Left-Weighted) -->
+  <rect width="1920" height="1080" fill="url(#vignette)"/>
+  
+  <!-- Dedicated Left Scrim for Desktop Typography -->
+  <rect x="0" y="0" width="1050" height="1080" fill="black" opacity="0.55"/>
+  <rect x="0" y="0" width="600" height="1080" fill="black" opacity="0.35"/>
+  
+  <!-- Subtle Lime Horizon Accent Line -->
+  <line x1="0" y1="1078" x2="1920" y2="1078" stroke="#CCFF00" stroke-width="3" opacity="0.4"/>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="mobBgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#14171B"/>
+      <stop offset="35%" stop-color="#1C2128"/>
+      <stop offset="70%" stop-color="#282F3A"/>
+      <stop offset="100%" stop-color="#0E1012"/>
+    </linearGradient>
+    <linearGradient id="mobSunGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#F3F5F7" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#C0C7CE" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="mobBottomScrim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#050708" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#050708" stop-opacity="0.75"/>
+      <stop offset="75%" stop-color="#050708" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#050708" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Deep Architecture Mobile Studio Background -->
+  <rect width="1080" height="1920" fill="url(#mobBgGrad)"/>
+
+  <!-- High Studio Windows & Daylight from Top/Right -->
+  <polygon points="400,0 1080,0 1080,1200 200,1200" fill="url(#mobSunGrad)"/>
+  <line x1="550" y1="0" x2="550" y2="1100" stroke="#181D24" stroke-width="6"/>
+  <line x1="820" y1="0" x2="820" y2="1100" stroke="#181D24" stroke-width="6"/>
+  <line x1="300" y1="500" x2="1080" y2="500" stroke="#181D24" stroke-width="6"/>
+
+  <!-- Gym Flooring with Perspective -->
+  <polygon points="0,1100 1080,1100 1080,1920 0,1920" fill="#0C0E10"/>
+  <line x1="0" y1="1100" x2="1080" y2="1100" stroke="#252A30" stroke-width="2"/>
+
+  <!-- Cable Machine Frame (Centered-Left) -->
+  <g id="cableFrameMob" transform="translate(180, 360)">
+    <rect x="0" y="0" width="40" height="900" rx="4" fill="#262D36"/>
+    <rect x="220" y="0" width="40" height="900" rx="4" fill="#20262E"/>
+    <rect x="-10" y="0" width="280" height="36" rx="4" fill="#2D3540"/>
+    
+    <!-- Weight Stack -->
+    <g transform="translate(56, 420)">
+      <rect x="0" y="0" width="148" height="24" rx="2" fill="#3D4552"/>
+      <rect x="0" y="28" width="148" height="24" rx="2" fill="#353D48"/>
+      <rect x="0" y="56" width="148" height="24" rx="2" fill="#2E3540"/>
+      <rect x="0" y="84" width="148" height="24" rx="2" fill="#262D36"/>
+      <rect x="0" y="112" width="148" height="24" rx="2" fill="#20262E"/>
+      <rect x="0" y="140" width="148" height="24" rx="2" fill="#1A1E24"/>
+      <rect x="0" y="168" width="148" height="24" rx="2" fill="#14181D"/>
+      <circle cx="74" cy="84" r="6" fill="#CCFF00"/>
+    </g>
+    <!-- Pulley Cable -->
+    <circle cx="130" cy="50" r="18" fill="#4B5563"/>
+    <line x1="130" y1="50" x2="130" y2="420" stroke="#9CA3AF" stroke-width="4"/>
+  </g>
+
+  <!-- Athletic Personal Trainer Silhouette (Upper Center) -->
+  <g id="trainerSilhouetteMob" transform="translate(480, 420)">
+    <!-- Head -->
+    <circle cx="110" cy="70" r="42" fill="#1A1E24"/>
+    <!-- Traps & Neck -->
+    <polygon points="90,110 130,110 160,155 60,155" fill="#171A20"/>
+    <!-- Athletic Torso -->
+    <path d="M 45 155 L 180 155 L 160 410 L 70 410 Z" fill="#121518"/>
+    <!-- Arms -->
+    <path d="M 50 160 L -40 250 L -90 310" stroke="#14171A" stroke-width="42" stroke-linecap="round" fill="none"/>
+    <path d="M 180 160 L 210 270 L 200 370" stroke="#14171A" stroke-width="38" stroke-linecap="round" fill="none"/>
+    <!-- Lower Body / Trousers -->
+    <path d="M 70 410 L 60 700 L 105 700 L 115 440 L 125 440 L 135 700 L 180 700 L 160 410 Z" fill="#0C0E10"/>
+  </g>
+
+  <!-- Deep Bottom Scrim for Controlled Mobile Lower Area (Typography & CTA Protection) -->
+  <rect x="0" y="900" width="1080" height="1020" fill="url(#mobBottomScrim)"/>
+</svg>

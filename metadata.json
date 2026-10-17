@@ -1,0 +1,8 @@
+{
+  "name": "Personal Trainer Master Template | Treinador Pessoal Brasil",
+  "description": "Template master premium para personal trainers no Brasil com hero em vídeo cinematográfico responsivo, agendamento via WhatsApp e metodologia individualizada.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

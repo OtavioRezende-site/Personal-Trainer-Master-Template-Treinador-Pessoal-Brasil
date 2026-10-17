@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1066" width="800" height="1066">
+  <defs>
+    <linearGradient id="ptGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1E24"/>
+      <stop offset="50%" stop-color="#121518"/>
+      <stop offset="100%" stop-color="#08090A"/>
+    </linearGradient>
+    <radialGradient id="softKeyLight" cx="35%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#E5ECF2" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#16191D"/>
+      <stop offset="100%" stop-color="#0E1012"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1066" fill="url(#ptGrad)"/>
+  <rect width="800" height="1066" fill="url(#softKeyLight)"/>
+
+  <!-- Minimalist Studio Architecture in background -->
+  <line x1="120" y1="0" x2="120" y2="1066" stroke="#252A30" stroke-width="2" opacity="0.4"/>
+  <line x1="680" y1="0" x2="680" y2="1066" stroke="#252A30" stroke-width="2" opacity="0.4"/>
+
+  <!-- Trainer Silhouette Figure (Athletic, Confident, Professional) -->
+  <g transform="translate(180, 200)">
+    <!-- Head & Beard Profile -->
+    <path d="M 220 80 C 180 80 160 120 160 180 C 160 250 200 290 220 300 C 240 290 280 250 280 180 C 280 120 260 80 220 80 Z" fill="#241E1C"/>
+    <!-- Athletic Traps & Neck -->
+    <path d="M 170 260 L 270 260 L 320 340 L 120 340 Z" fill="#1E1917"/>
+    <!-- Broad Shoulders & Performance Shirt -->
+    <path d="M 120 340 L 320 340 L 400 480 L 410 750 L 30 750 L 40 480 Z" fill="url(#shirtGrad)"/>
+    <!-- Arms Folded in Confident Pose -->
+    <path d="M 50 480 Q 220 540 390 480" stroke="#1F242A" stroke-width="44" stroke-linecap="round" fill="none"/>
+    <path d="M 100 520 Q 220 580 340 520" stroke="#16191D" stroke-width="36" stroke-linecap="round" fill="none"/>
+    <!-- Subtle CREF / Brand Badge on Chest -->
+    <circle cx="290" cy="400" r="4" fill="#CCFF00"/>
+  </g>
+
+  <!-- Bottom Vignette & Information Scrim -->
+  <rect x="0" y="700" width="800" height="366" fill="url(#ptGrad)" opacity="0.8"/>
+  <line x1="80" y1="960" x2="720" y2="960" stroke="#262C33" stroke-width="1"/>
+  
+  <text x="80" y="940" fill="#CCFF00" font-family="'JetBrains Mono', monospace" font-size="14" letter-spacing="3">CREF REGULARIZADO</text>
+  <text x="80" y="1000" fill="#F5F4F0" font-family="'Archivo', sans-serif" font-weight="700" font-size="28">PERSONAL TRAINER</text>
+  <text x="80" y="1028" fill="#9E9C96" font-family="'Plus Jakarta Sans', sans-serif" font-size="14">Especialista em Biomecânica &amp; Força</text>
+</svg>
